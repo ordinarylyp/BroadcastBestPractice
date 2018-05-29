@@ -10,6 +10,6 @@
         android:id="@+id/force_offline"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Send force offline broadcast"/>
+        android:text="发送强制下线广播"/>
 
 </android.support.constraint.ConstraintLayout>
