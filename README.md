@@ -75,3 +75,9 @@ public class BaseActivity extends AppCompatActivity {
 ![login3](/img/login3.png "login3")
 
 #### 添加记住密码的功能，采用SharedPreferences存储
+封装了一个关于 SharedPreferences 的工具类[preUtils](/app/src/main/java/lyp/com/broadcastbestpractice/preUtils.java),同时修改了LoginActivity和布局文件，具体修改可见代码提交历史，关于SharedPreferences在另外一个项目[SharePreferencesTest]()中讲解。
+运行结果：
+
+![saves1](/img/saves1.png "saves1")
+![saves2](/img/saves2.png "saves2")
+![saves3](/img/saves3.png "saves3")
