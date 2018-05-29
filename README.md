@@ -6,10 +6,9 @@ Android 广播强制下线
 [BaseActivity](/app/src/main/java/lyp/com/broadcastbestpractice/BaseActivity.java)作为所有活动的父类,这在之前有讲过，可
 以查看[ActivityTest](https://github.com/ordinarylyp/ActivityTest)；
 #### 实现登录功能
-1.新建[LoginActivity]()，修改活动的布局[activity_login.xml](),并在[AndroidManifest.xml](/app/src/main/AndroidManifest.xml
-)中将其修改为主活动；
+1.新建[LoginActivity](/app/src/main/java/lyp/com/broadcastbestpractice/LoginActivity.java)，修改活动的布局[activity_login.xml](),并在[AndroidManifest.xml](/app/src/main/AndroidManifest.xml)中将其修改为主活动；
 
-2.修改[MainActivity]()和[activity_main.xml]()加入强制下线功能；需要注意的是我们是通过广播实现前置下线的，在这里，为了保证强制下线的功能功能能不会依附于任何一个界面，我们将其定义在BaseActivity里。
+2.修改[MainActivity](/app/src/main/java/lyp/com/broadcastbestpractice/MainActivity.java)和[activity_main.xml]()加入强制下线功能；需要注意的是我们是通过广播实现前置下线的，在这里，为了保证强制下线的功能功能能不会依附于任何一个界面，我们将其定义在BaseActivity里。
 #### 强制下线的广播
 具体查看下列代码，需要注意的是这里的广播注册和取消注册是在onResume()和onPause()这两个生命周期函数的，这样做是为了保证只有处在栈顶的活动才能接受到这条广播。具体代码如下
 ```Java
