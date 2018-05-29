@@ -73,3 +73,5 @@ public class BaseActivity extends AppCompatActivity {
 ![login1](/img/login1.png "login1")
 ![login2](/img/login2.png "login2")
 ![login3](/img/login3.png "login3")
+
+#### 添加记住密码的功能，采用SharedPreferences存储
